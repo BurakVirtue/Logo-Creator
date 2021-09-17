@@ -4,6 +4,8 @@ Kendi botum için yapmış olduğum logo komutu. logonun tüm telif hakları şa
 
 Vermiş olduğum kodun oluşturmuş olduğu örnek logo.
 
+Sınırsız büyüklükte vektörel olarak oluşturur 1x.....+∞
+
 ![Logo Örnreği](https://cdn.discordapp.com/attachments/881667109694894130/888506454301110282/my-logo.png)
 
 # Logonun sertifikası.
