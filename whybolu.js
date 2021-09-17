@@ -8,8 +8,8 @@ const request = require('node-superfetch');
 const snekfetch = require("snekfetch")
 
 module.exports = {
-    name: 'wb',
-    aliases: ["why", "whybolu"],
+    name: 'l',
+    aliases: ["logo", "Logo"],
     category: 'admin',
     run: async(client, message, args) => {
       
@@ -20,7 +20,7 @@ module.exports = {
     let hesap_2 = (superWidth - 500) / 2
     let superScale = superWidth/500
     
-    // BU ÇILGINLIK BEBEYİM
+    // START
     var canvas = Canvas.createCanvas(500+hesap, 500+hesap)
     var ctx = canvas.getContext('2d');
       
@@ -89,14 +89,14 @@ module.exports = {
     ctx.closePath();
     ctx.clip()
       
-    //BACKGROUND WHYBOLU 
+    //BACKGROUND LOGO 
     var grd = ctx.createLinearGradient(400,-200,0,210)
     grd.addColorStop(0, "#3c3c7c");
     grd.addColorStop(1, "#000000");  
     ctx.fillStyle = grd;
     ctx.fillRect(0,0,500+hesap,500+hesap)
       
-    //ŞOW BAŞLASIN
+    //BAŞLAYALIM OZAMAN
     ctx.scale(superScale, superScale);
     ctx.beginPath();
     ctx.fillStyle = w;
@@ -716,13 +716,19 @@ module.exports = {
     ctx.closePath();
     let attachment = canvas.pngStream();
     const embed = new Discord.MessageEmbed()
-    .attachFiles(new Discord.MessageAttachment(attachment, 'Whybolu.png'))
-    .setImage("attachment://Whybolu.png")
+    .attachFiles(new Discord.MessageAttachment(attachment, 'Logo.png'))
+    .setImage("attachment://Logo.png")
     .setAuthor(message.author.tag,message.author.avatarURL({format: 'png', dynamic: true, size: 1024}))
     .setTitle("Vektör Oluşturuldu!")
-    .setDescription(`**${args[0]}x${args[0]}px** Boyutunda(Çözünürlüğünde) vektör WhYBoLu logosu oluşturuldu.`)
+    .setDescription(`**${args[0]}x${args[0]}px** Boyutunda(Çözünürlüğünde) vektör logo oluşturuldu.`)
     .setColor("#34346d")
     message.lineReplyNoMention(embed)  
       
     }
 };
+
+
+
+//CREATED BY "Burak V.#6584"
+//Discord.js Sürümü v12
+//İrtibat iletişim "Burak V.#6584"
